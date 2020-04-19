@@ -6,6 +6,14 @@ var numeric = "1234567890";
 var specialChar = "!@#$%^&*()";
 var allowed = "";
 
+function shuffleCharacters(allowed) {
+  var pass = "";
+  for (let i = 0; i < allowed.length; i++) {
+    pass += allowed.charAt(Math.floor(Math.random() * allowed.length));
+  }
+  return pass;
+}
+
 // Write password to the #password input
 
 function writePassword() {
@@ -16,6 +24,8 @@ function writePassword() {
 }
 
 function generatePassword() {
+  var temp = [];
+  var passCheck = true;
   var pass = "";
   var charSet = 0;
   while (charSet < 8 || charSet > 128) {
@@ -57,9 +67,7 @@ function generatePassword() {
     generatePassword();
   }
 
-  for (let i = 0; i < allowed.length; i++) {
-    pass += allowed.charAt(Math.floor(Math.random() * allowed.length));
-  }
+  pass = shuffleCharacters(allowed);
 
   pass = pass.slice(0, +charSet);
 

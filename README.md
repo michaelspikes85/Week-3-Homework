@@ -1,48 +1,54 @@
-# 03 JavaScript: Password Generator
+Password Generator
+Simple program to generate passwords bases on selection of criteria. The criteria is as follows:
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+1. Between 8 and 128 characters.
+2. Uppercase characters.
+3. Lowercase characters.
+4. Numeric characters.
+5. Special characters.
 
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
+Getting Started
+Just click the generate password button, key in the number of characters you want in your password, and select the character sets desired.
 
-## User Story
+Prerequisites
+N/A
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+Installing
+N/A
 
-## Acceptance Criteria
+Running the tests
+Character sets that are selected will be logged in the console.
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+Break down into end to end tests
+N/A
 
-The following image demonstrates the application functionality:
+Give an example
+N/A
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
+And coding style tests
+N/A
 
-## Review
+Deployment
+N/A
 
-You are required to submit the following for review:
+Built With
+Visual Studio Code
 
-* The URL of the deployed application.
+Contributing
+N/A
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+Versioning
+N/A
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+Authors
+Michael Spikes
+
+License
+N/A
+
+Acknowledgments
+Special thanks to the following for helping me figure out code:
+-Tyler Roth
+-Chris Enright
+-Michael Melvin
+-Tim Dusterdieck
